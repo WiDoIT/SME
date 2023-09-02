@@ -25,35 +25,35 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="" id="form">
+                    <form action="">
                         {!! csrf_field() !!}
                         <div class="form-group">
                             <label for="" class="form-label">id</label>
-                            <input type="text" name="" id="id" class="form-control" placeholder=""
+                            <input type="text" name="id" id="id" class="form-control" placeholder=""
                                 aria-describedby="helpId">
                             <small id="helpId" class="text-muted">Help text</small>
                         </div>
                         <div class="form-group">
                             <label for="" class="form-label">fecha inicio</label>
-                            <input type="datetime-local" name="" id="start" class="form-control" placeholder=""
+                            <input type="date" name="start" id="start" class="form-control" placeholder=""
                                 aria-describedby="helpId">
                             <small id="helpId" class="text-muted">Help text</small>
                         </div>
                         <div class="form-group">
                             <label for="" class="form-label">fecha termino</label>
-                            <input type="datetime-local" name="" id="end" class="form-control" placeholder=""
+                            <input type="date" name="end" id="end" class="form-control" placeholder=""
                                 aria-describedby="helpId">
                             <small id="helpId" class="text-muted">Help text</small>
                         </div>
                         <div class="form-group">
                             <label for="" class="form-label">tecnico id</label>
-                            <input type="number" name="" id="tecnico_id" class="form-control" placeholder=""
+                            <input type="number" name="tecnico_id" id="tecnico_id" class="form-control" placeholder=""
                                 aria-describedby="helpId">
                             <small id="helpId" class="text-muted">Help text</small>
                         </div>
                         <div class="form-group">
                             <label for="" class="form-label">maquina id</label>
-                            <input type="number" name="" id="maquina_id" class="form-control" placeholder=""
+                            <input type="number" name="maquina_id" id="maquina_id" class="form-control" placeholder=""
                                 aria-describedby="helpId">
                             <small id="helpId" class="text-muted">Help text</small>
                         </div>

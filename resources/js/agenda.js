@@ -42,15 +42,8 @@ const calendar = new Calendar(calendarEl, {
       )
   }
 })
-const datos2 = {
-  start: document.getElementById("start").value,
-  end: document.getElementById("end").value,
-  tecnico_id: 1,
-  maquina_id: 2,
-  
-  
-}
-console.log(datos2);
+
+
 calendar.render();
 
 //para guardar
@@ -61,12 +54,15 @@ document.getElementById("btnGuardar").addEventListener("click", function () {
 document.getElementById("btnEliminar").addEventListener("click", function () {
   enviarDatos("http://localhost/prsme/sme/public/evento/borrar/" + formulario.id.value);
 });
+//para modificar
+document.getElementById("btnModificar").addEventListener("click", function () {
+  enviarDatos("http://localhost/prsme/sme/public/evento/actualizar/" + formulario.id.value);
+});
 
 function enviarDatos(url) {
   const datos = new FormData(formulario);
   console.log(datos);
-  console.log(formulario.start.value);
-  console.log(datos);
+  console.log("aqui esta la wea del start"+formulario.start.value);
 
   axios.post(url, datos).
     then(
